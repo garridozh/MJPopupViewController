@@ -72,7 +72,7 @@ static void * const keypath = (void*)&keypath;
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     CGFloat screenWidth;
     CGFloat screenHeight;
-    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown){
+    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown || orientation == UIDeviceOrientationFaceUp){
         screenWidth = MIN(screenRect.size.height,screenRect.size.width);
         screenHeight = MAX(screenRect.size.height,screenRect.size.width);
     }else{
